@@ -173,7 +173,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
-    background-image: url(/dist/img/bg-pic.png);
+    background-image: url(../img/bg-pic.png);
     background-repeat: no-repeat;
     background-position: 94% 89%; }
     header .container .content {
@@ -379,22 +379,22 @@ header {
               transform: rotate(90deg);
               cursor: pointer; }
       #services .grid-wrapper .grid-block:nth-child(1) {
-        background-image: url(/dist/img/service1.png);
+        background-image: url(../img/service1.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
       #services .grid-wrapper .grid-block:nth-child(2) {
-        background-image: url(/dist/img/service2.png);
+        background-image: url(../img/service2.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
       #services .grid-wrapper .grid-block:nth-child(3) {
-        background-image: url(/dist/img/service3.png);
+        background-image: url(../img/service3.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
       #services .grid-wrapper .grid-block:nth-child(4) {
-        background-image: url(/dist/img/service4.png);
+        background-image: url(../img/service4.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; }
@@ -409,7 +409,7 @@ header {
           #services .grid-wrapper .grid-block:nth-child(even) {
             grid-column: span 12; } }
       #services .grid-wrapper .grid-block:nth-child(5) {
-        background-image: url(/dist/img/service5.png);
+        background-image: url(../img/service5.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -418,7 +418,7 @@ header {
           #services .grid-wrapper .grid-block:nth-child(5) {
             grid-column: span 12; } }
       #services .grid-wrapper .grid-block:nth-child(6) {
-        background-image: url(/dist/img/service6.png);
+        background-image: url(../img/service6.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -450,32 +450,32 @@ header {
     height: 440px;
     position: relative; }
     .grid-team .team-member:nth-of-type(1) {
-      background-image: url(/dist/img/team1.png);
+      background-image: url(../img/team1.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
     .grid-team .team-member:nth-of-type(2) {
-      background-image: url(/dist/img/team2.png);
+      background-image: url(../img/team2.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
     .grid-team .team-member:nth-of-type(3) {
-      background-image: url(/dist/img/team3.png);
+      background-image: url(../img/team3.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
     .grid-team .team-member:nth-of-type(4) {
-      background-image: url(/dist/img/team4.png);
+      background-image: url(../img/team4.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
     .grid-team .team-member:nth-of-type(5) {
-      background-image: url(/dist/img/team5.png);
+      background-image: url(../img/team5.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
     .grid-team .team-member:nth-of-type(6) {
-      background-image: url(/dist/img/team1.png);
+      background-image: url(../img/team1.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
@@ -649,17 +649,17 @@ header {
         background-position: center;
         background-size: cover; }
         #testimonials .content-wrapper .controls .arrow .icon.left {
-          background-image: url(/dist/img/arrow-left.png); }
+          background-image: url(../img/arrow-left.png); }
         #testimonials .content-wrapper .controls .arrow .icon.right {
-          background-image: url(/dist/img/arrow-left.png);
+          background-image: url(../img/arrow-left.png);
           transform: rotate(180deg); }
       #testimonials .content-wrapper .controls .arrow:hover {
         background-color: #6ff6eb; }
         #testimonials .content-wrapper .controls .arrow:hover .left {
-          background-image: url(/dist/img/arrow-right.png);
+          background-image: url(../img/arrow-right.png);
           transform: rotate(180deg); }
         #testimonials .content-wrapper .controls .arrow:hover .right {
-          background-image: url(/dist/img/arrow-right.png);
+          background-image: url(../img/arrow-right.png);
           transform: rotate(0deg); }
 
 #partners .container {
@@ -695,7 +695,7 @@ header {
           grid-template-columns: 1fr; } }
 
 #contact {
-  background-image: url(/dist//img/bg-footer.png);
+  background-image: url(../img/bg-footer.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
