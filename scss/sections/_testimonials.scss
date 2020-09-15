@@ -142,11 +142,11 @@
           @include bg-img;
 
           &.left {
-            background-image: url(/dist/img/arrow-left.png);
+            background-image: url(./img/arrow-left.png);
           }
 
           &.right {
-            background-image: url(/dist/img/arrow-left.png);
+            background-image: url(./img/arrow-left.png);
             transform: rotate(180deg);
           }
         }
@@ -155,12 +155,12 @@
           background-color: $accent-color-bright;
 
           .left {
-            background-image: url(/dist/img/arrow-right.png);
+            background-image: url(./img/arrow-right.png);
             transform: rotate(180deg);
           }
 
           .right {
-            background-image: url(/dist/img/arrow-right.png);
+            background-image: url(./img/arrow-right.png);
             transform: rotate(0deg);
           }
         }
