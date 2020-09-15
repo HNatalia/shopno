@@ -1,0 +1,125 @@
+#contact {
+  background-image: url(/dist//img/bg-footer.png);
+  @include bg-img;
+  padding: 120px 0;
+
+  .container {
+    display: flex;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+
+    form {
+      background-color: rgba(2, 22, 35, 0.7);
+      margin-right: 25px;
+      display: flex;
+      flex-direction: column;
+      padding: 47px 33px 37px 33px;
+      flex: 1.1;
+      @media screen and (max-width: 900px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      .input-block {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        label {
+          font-family: $raleway-font;
+          font-size: 15px;
+          color: rgba(225, 225, 225, 0.6);
+          transform: translateY(0);
+          transition: all 0.4s;
+          position: absolute;
+        }
+
+        input {
+          border: none;
+          background-color: transparent;
+          border-bottom: 1px solid rgba(225, 225, 225, 0.6);
+          margin-bottom: 25px;
+          margin-top: 15px;
+          font-family: $raleway-font;
+          color: $white-color;
+          opacity: 0.7;
+          font-size: 15px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:focus + label {
+            transform: translateY(-8px);
+            font-size: 13px;
+          }
+        }
+
+        textarea {
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid rgba(225, 225, 225, 0.6);
+          resize: none;
+          margin-bottom: 40px;
+          order: 2;
+          font-family: $raleway-font;
+          color: $white-color;
+          opacity: 0.7;
+          font-size: 15px;
+          margin-top: 25px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:focus + label {
+            transform: translateY(-8px);
+            font-size: 13px;
+          }
+        }
+      }
+
+      input[type="submit"] {
+        max-width: 245px;
+        width: 100%;
+        background-color: $accent-form-color;
+        border: none;
+        padding: 20px 0;
+        border-radius: 1px;
+        font-family: $montserrat-font;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        transition: 0.3s;
+        @media screen and (max-width: 550px) {
+          margin: 0 auto;
+        }
+
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+
+    .adress {
+      background-color: rgba(2, 22, 35, 0.7);
+      flex: 1;
+      padding: 36px 30px 27px 30px;
+
+      .content-description {
+        color: rgba(225, 225, 225, 0.6);
+        margin-bottom: 0;
+
+        &:nth-of-type(4) {
+          margin-bottom: 37px;
+        }
+
+        &:nth-of-type(6) {
+          margin-bottom: 27px;
+        }
+      }
+    }
+  }
+}

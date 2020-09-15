@@ -1,0 +1,42 @@
+footer {
+  background-color: $footer-bg-color;
+  padding: 95px 0;
+  @include flex-col-center;
+
+  h4 {
+    font-family: $raleway-font;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgba(225, 225, 225, 0.7);
+    margin-bottom: 20px;
+  }
+
+  .social {
+    display: flex;
+
+    a {
+      width: 45px;
+      height: 45px;
+      background-color: #424648;
+      margin: 0 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(225, 225, 225, 0.4);
+      transition: 0.2s;
+
+      &:hover {
+        background-color: $accent-form-color;
+        color: $black-color;
+      }
+    }
+  }
+
+  .content-description {
+    color: rgba(225, 225, 225, 0.4);
+    margin-top: 40px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}

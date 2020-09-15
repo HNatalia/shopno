@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

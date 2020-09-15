@@ -1,0 +1,63 @@
+#about {
+  background-color: $secondary-bg-color;
+
+  .container {
+    padding-bottom: 110px;
+
+    .section-content {
+      display: flex;
+      justify-content: space-between;
+
+      .img-block {
+        @include flex-col-center;
+        position: relative;
+        flex: 1;
+        @media screen and (max-width: 970px) {
+          display: none;
+        }
+
+        .rectangle {
+          background-color: $main-bg-color;
+          width: 100%;
+          height: 410px;
+          margin-top: 30px;
+        }
+
+        .items-container {
+          position: absolute;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+          .viewport {
+            overflow: hidden;
+
+            .items {
+              max-width: 390px;
+              display: flex;
+              transition: transform 1s;
+
+              img {
+                max-width: 390px;
+                height: 480px;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+
+        .indicators {
+          margin-top: 80px;
+        }
+      }
+
+      .content-block {
+        padding-left: 110px;
+        flex: 1;
+
+        @media screen and (max-width: 970px) {
+          text-align: center;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

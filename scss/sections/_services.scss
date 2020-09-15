@@ -1,0 +1,159 @@
+#services {
+  background-color: $secondary-bg-color;
+  padding-bottom: 120px;
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 420px 365px 365px;
+    grid-gap: 15px;
+    @media screen and (max-width: 960px) {
+      grid-template-rows: repeat(6, 420px);
+    }
+    @media screen and (max-width: 400px) {
+      grid-template-rows: 600px repeat(5, 420px);
+    }
+
+    .grid-block {
+      position: relative;
+
+      .grid-content {
+        position: absolute;
+        display: flex;
+        opacity: 1;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        padding: 0 30px 60px 40px;
+        transition: 1s;
+
+        h3,
+        .content-description {
+          color: $white-color;
+        }
+
+        .details {
+          color: $white-color;
+          font-family: $raleway-font;
+          font-size: 18px;
+          opacity: 80%;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $accent-color-bright;
+          }
+        }
+      }
+
+      .back-side {
+        opacity: 0;
+        position: absolute;
+        padding: 30px;
+        background-color: $accent-service-color;
+        height: 100%;
+        transition: 1s;
+        @media screen and (max-width: 585px) {
+          overflow: scroll;
+        }
+
+        h3,
+        .content-description {
+          color: $black-color;
+        }
+
+        .close-btn {
+          width: 15px;
+          height: 15px;
+          background-color: transparent;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .line {
+            width: 15px;
+            height: 1px;
+            background-color: $black-color;
+            transform: rotate(45deg);
+            position: relative;
+
+            &:after {
+              position: absolute;
+              content: "";
+              width: 15px;
+              height: 1px;
+              background-color: $black-color;
+              transform: rotate(90deg);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        background-image: url(/dist/img/service1.png);
+        @include bg-img;
+      }
+
+      &:nth-child(2) {
+        background-image: url(/dist/img/service2.png);
+        @include bg-img;
+      }
+
+      &:nth-child(3) {
+        background-image: url(/dist/img/service3.png);
+        @include bg-img;
+      }
+
+      &:nth-child(4) {
+        background-image: url(/dist/img/service4.png);
+        @include bg-img;
+      }
+
+      &:nth-child(odd) {
+        grid-column: span 7;
+        @media screen and (max-width: 960px) {
+          grid-column: span 12;
+        }
+      }
+
+      &:nth-child(even) {
+        grid-column: span 5;
+        @media screen and (max-width: 960px) {
+          grid-column: span 12;
+        }
+      }
+
+      &:nth-child(5) {
+        background-image: url(/dist/img/service5.png);
+        @include bg-img;
+        grid-column: span 5;
+        @media screen and (max-width: 960px) {
+          grid-column: span 12;
+        }
+      }
+
+      &:nth-child(6) {
+        background-image: url(/dist/img/service6.png);
+        @include bg-img;
+        grid-column: span 7;
+        @media screen and (max-width: 960px) {
+          grid-column: span 12;
+        }
+      }
+
+      &.active {
+        .back-side {
+          opacity: 1;
+          z-index: 1;
+        }
+        .grid-content {
+          opacity: 0;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
