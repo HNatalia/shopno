@@ -6,7 +6,8 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 420px 365px 365px;
-    grid-gap: 15px;
+    grid-column-gap: 14px;
+    grid-row-gap: 12px;
     @media screen and (max-width: 960px) {
       grid-template-rows: repeat(6, 420px);
     }
@@ -26,34 +27,42 @@
         background-color: rgba(0, 0, 0, 0.7);
         width: 100%;
         height: 100%;
-        padding: 0 30px 60px 40px;
+        padding: 0 30px 56px 67px;
         transition: 1s;
 
         h3,
         .content-description {
           color: $white-color;
+          opacity: 90%;
+        }
+
+        h3 {
+          opacity: 95%;
         }
 
         .details {
           color: $white-color;
           font-family: $raleway-font;
           font-size: 18px;
-          opacity: 80%;
+          opacity: 90%;
           text-transform: uppercase;
-
-          &:hover {
-            color: $accent-color-bright;
-          }
+          background-image: url(../../dist/img/more-arr.png);
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: 132px;
         }
       }
 
       .back-side {
         opacity: 0;
         position: absolute;
-        padding: 30px;
+        padding: 50px;
         background-color: $accent-service-color;
         height: 100%;
         transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @media screen and (max-width: 585px) {
           overflow: scroll;
         }
@@ -61,6 +70,11 @@
         h3,
         .content-description {
           color: $black-color;
+          opacity: 83%;
+        }
+
+        .content-description {
+          opacity: 75%;
         }
 
         .close-btn {
@@ -76,6 +90,7 @@
             width: 15px;
             height: 1px;
             background-color: $black-color;
+            opacity: 50%;
             transform: rotate(45deg);
             position: relative;
 
