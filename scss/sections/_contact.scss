@@ -29,7 +29,8 @@
         label {
           font-family: $raleway-font;
           font-size: 15px;
-          color: rgba(225, 225, 225, 0.6);
+          color: $white-color;
+          opacity: 60%;
           transform: translateY(0);
           transition: all 0.4s;
           position: absolute;
@@ -90,6 +91,7 @@
         font-family: $montserrat-font;
         font-size: 18px;
         text-transform: uppercase;
+        letter-spacing: 2px;
         color: rgba(0, 0, 0, 0.7);
         cursor: pointer;
         transition: 0.3s;
@@ -109,7 +111,8 @@
       padding: 36px 30px 27px 30px;
 
       .content-description {
-        color: rgba(225, 225, 225, 0.6);
+        color: $white-color;
+        opacity: 70%;
         margin-bottom: 0;
 
         &:nth-of-type(4) {
